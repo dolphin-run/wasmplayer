@@ -385,7 +385,7 @@ int main()
         printf("WSAStartup Failed.\n");
         return 1;
     }
-    WebSocket *ws = WebSocket::from_url("ws://10.64.29.1:12345");
+    WebSocket *ws = WebSocket::from_url("ws://127.0.0.1:12345");
     if (!ws) return 1;
 
     bool dblHit = true;
